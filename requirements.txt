@@ -1,0 +1,14 @@
+transformers==4.47.0
+accelerate
+sentencepiece
+bitsandbytes
+scikit-learn
+pandas
+numpy
+matplotlib
+seaborn
+nltk
+joblib
+wordcloud
+evaluate
+ipywidgets

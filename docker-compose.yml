@@ -1,0 +1,19 @@
+services:
+  jupyter:
+    build: .
+    ipc: host
+    ports:
+      - "8888:8888"
+    environment:
+      - PYTHONPATH=/workspace
+      - TOKENIZERS_PARALLELISM=false
+    volumes:
+      - .:/workspace
+      - ~/.cache/huggingface:/root/.cache/huggingface
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
