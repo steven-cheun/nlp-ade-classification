@@ -85,7 +85,7 @@ python scripts/train_biobert.py
 
 Explore `notebooks/01_exploration.ipynb` for EDA and `notebooks/02_analysis.ipynb` for cross-model error analysis.
 
-> **Note:** Trained BioBERT weights (~440MB) are not included in this repo due to size. Run `train_biobert.py` to regenerate them locally on a GPU with ≥8GB VRAM.
+> **Note:** Trained BioBERT weights (~440MB) are not included in this repo due to size. The fine-tuned model is available on [Hugging Face](https://huggingface.co/scheun/biobert-ade-classifier). To regenerate locally, run `train_biobert.py` on a GPU with ≥8GB VRAM.
 
 ## References
 
